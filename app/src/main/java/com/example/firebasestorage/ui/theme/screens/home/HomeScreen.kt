@@ -30,7 +30,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.firebasestorage.ui.theme.Purple200
+import com.example.firebasestorage.ui.theme.Purple40
 
 
 @Composable
@@ -38,7 +38,7 @@ fun HomeScreen2(navController: NavHostController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Purple200),
+            .background(Purple40),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
@@ -70,7 +70,7 @@ fun HomeScreen2(navController: NavHostController) {
         Button(
             onClick = {  },
             shape = RoundedCornerShape(5.dp),
-            colors = ButtonDefaults.buttonColors(Purple200),
+            colors = ButtonDefaults.buttonColors(Purple40),
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 30.dp, end = 30.dp)

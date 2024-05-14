@@ -1,5 +1,6 @@
 package com.example.firebasestorage.navigation
 
+import android.view.View
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
@@ -7,7 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.firebasestorage.ui.theme.screens.books.AddProductsScreen
-import com.example.firebasestorage.ui.theme.screens.home.HomeScreen
+import com.example.firebasestorage.ui.theme.screens.home.HomeScreen2
 import com.example.firebasestorage.ui.theme.screens.login.LoginScreen
 
 @Composable
@@ -27,13 +28,13 @@ fun AppNavHost(
             LoginScreen(navController = navController)
         }
         composable(HOME_URL){
-            HomeScreen(navController = navController)
+            HomeScreen2(navController = navController)
         }
         composable(ADD_BOOKS_URL){
             AddProductsScreen(navController = navController)
         }
         composable(VIEW_BOOKS_URL){
-            HomeScreen(navController = navController)
+
         }
 
     }
